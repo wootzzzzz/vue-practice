@@ -25,21 +25,21 @@ module.exports = {
           // Corresponding to your own routing file, for example, a has parameters, you need to write /a/param1.
           routes: ['/', '/home', '/about'],
 
-          minify: {
-            collapseBooleanAttributes: true,
-            collapseWhitespace: true,
-            decodeEntities: true,
-            keepClosingSlash: true,
-            sortAttributes: true
-          },
+          // minify: {
+          //   collapseBooleanAttributes: true,
+          //   collapseWhitespace: true,
+          //   decodeEntities: true,
+          //   keepClosingSlash: true,
+          //   sortAttributes: true
+          // },
    
           // This is very important, if it is not configured, it will not be precompiled.
           renderer: new Renderer({
             
-            inject: {
-                foo: 'bar'      
-            },
-           headless: false,
+          //   inject: {
+          //       foo: 'bar'      
+          //   },
+          //  headless: false,
           //  renderAfterTime: 5000,
             // In main.js document.dispatchEvent(new Event('render-event')), the event names of the two should correspond.
             renderAfterDocumentEvent: 'render-event'
