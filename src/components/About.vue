@@ -1,31 +1,41 @@
 <template>
-    <div>
-        <h1>About</h1>
-    </div>
+ <div>
+   <h1>About</h1>
+ </div>
 </template>
 
-
 <script>
-export default {
+
+import Vue from 'vue';
+import Component from 'vue-class-component';
+// import { Component, Vue } from 'vue-property-decorator';
+
+@Component({
   name: `About`,
   metaInfo() {
     return {
-      title: "ABOUTPAGE  - Build your network in your field of interest",
+      title: 'Cent to Change',
+      htmlAttrs: {
+        lang: 'en-US'
+      },
       meta: [
-        {
-          name: "description",
-          content:
-            "ABOUTPAGE is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.",
-        },
-        {
-          property: "og:title",
-          content: "ABOUTPAGE - Build your network in your field of interest",
-        },
-        { property: "og:site_name", content: "ABOUTPAGE" },
-        { property: "og:type", content: "website" },
-        { name: "robots", content: "index,follow" },
-      ],
+        { charset: 'utf-8' },
+        { name: 'description', content: 'Clean Water' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { property: 'og:title', content: 'Cent to Change'},
+        { property: 'og:type', content: 'website'},
+        { property: 'og:site_name', content: 'Baseco Tondo'},
+        // { property: 'og:url', content: process.env.VUE_APP_BASE_URL + '/' + this.$route.params.link },
+        { property: 'og:image', content: 'https://api.heropoints.tech/public/upload/ngo/1/1/form_image.jpeg' }    
+      ]
     };
   },
-};
+})
+export default class About extends Vue {
+
+
+}
 </script>
+
+<style>
+</style>
