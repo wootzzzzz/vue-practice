@@ -3,6 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
     <router-view/>
+    <router-link to="/home">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
 </template>
 
