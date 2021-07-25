@@ -23,7 +23,7 @@ module.exports = {
           staticDir: path.join(__dirname, 'dist'),
    
           // Corresponding to your own routing file, for example, a has parameters, you need to write /a/param1.
-          routes: ['/', '/home', '/about', `/${this.$route.params.link}`],
+          routes: ['/', '/home', '/about', '/c2c'],
 
           // minify: {
           //   collapseBooleanAttributes: true,
