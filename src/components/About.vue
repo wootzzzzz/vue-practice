@@ -11,7 +11,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: `About`,
+  name: `About-us`,
   metaInfo() {
     return {
       title: 'Cent to Change',

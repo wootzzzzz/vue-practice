@@ -6,12 +6,17 @@ Vue.use(VueRouter);
 Vue.use(VueMeta);
 
 const routes = [
+
   {
-    path: '/',
-    name: 'HelloWorld',
-    meta: {title: 'Hello World'},
+    path: "*",
     component: () => import('@/components/HelloWorld.vue')
   },
+  // {
+  //   path: '/',
+  //   name: 'HelloWorld',
+  //   meta: {title: 'Hello World'},
+  //   component: () => import('@/components/HelloWorld.vue')
+  // },
   {
     path: '/home',
     name: 'Home',
