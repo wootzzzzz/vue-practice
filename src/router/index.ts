@@ -7,10 +7,10 @@ Vue.use(VueMeta);
 
 const routes = [
 
-  // {
-  //   path: "*",
-  //   component: () => import('@/components/HelloWorld.vue')
-  // },
+  {
+    path: "*",
+    component: () => import('@/components/HelloWorld.vue')
+  },
 
   {
     path: '/home',
@@ -34,7 +34,6 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
   routes
 });
 
