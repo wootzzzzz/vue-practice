@@ -30,7 +30,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "prerender-spa-plugin": "^3.2.1",
     "typescript": "~4.1.5",
-    "vue-cli-plugin-prerender-spa": "~1.1.6",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
